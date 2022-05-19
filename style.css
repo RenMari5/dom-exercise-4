@@ -1,0 +1,36 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-block;
+}
+
+.penny {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: chocolate;
+  border: 2px solid brown;
+}
+
+.nickle {
+  border-radius: 50%;
+  height: 125px;
+  width: 125px;
+  background-color: gray;
+  border: 2px solid darkgray;
+}
+
+.dime {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  background-color: gray;
+  border: 2px solid darkgray;
+}
+
+.quarter {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: gray;
+  border: 2px solid darkgray;
+}
