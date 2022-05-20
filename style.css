@@ -3,6 +3,12 @@ body {
   display: inline-block;
 }
 
+ul {
+  list-style: none;
+  padding: 20px;
+  margin: 10px;
+}
+
 .penny {
   border-radius: 50%;
   height: 100px;
