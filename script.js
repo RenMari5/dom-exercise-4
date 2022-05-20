@@ -1,23 +1,27 @@
-const submitCoin = document.getElementById("coin-form");
+const submitCoin = document.getElementById("submit-button");
 
-submitCoin.addEventListener("submit", handleCoinSubmit);
+submitCoin.addEventListener("click", handleCoinSubmit);
 
 function handleCoinSubmit(event) {
   event.preventDefault();
   const addCoinNumber = document.getElementById("how-many").value;
 
   const getCoin = document.getElementById("which-coin").value;
-  
-  for (let i = 0; i <= addCoinNumber; i++){
+
+  let coinListItems = document.getElementById("coin-list");
+
+  for (let i = 0; i < addCoinNumber; i++) {
     let listCoins = document.createElement("li");
-    if (getCoin === "Penny"){
-      listCoins.innerText = getCoin;
-    } else if (getCoin === "Dime"){
-      listCoins.innerText = getCoin;
-    } else if (getCoin === "Quarter"){
-      listCoins.innerText = getCoin;
-    } else if (getCoin === "Nickle"){
-      listCoins.innerText = getCoin;
+    if (getCoin === "Penny") {
+      listCoins.innerText = "Penny";
+    } else if (getCoin === "Dime") {
+      listCoins.innerText = "Dime";
+    } else if (getCoin === "Quarter") {
+      listCoins.innerText = "Quarter";
+    } else if (getCoin === "Nickle") {
+      listCoins.innerText = "Nickle";
     }
-  } 
+    coinListItems.appendChild(listCoins);
+    console.log(listCoins);
+  }
 }
